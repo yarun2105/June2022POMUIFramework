@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [open Cart App  Regression suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <listeners>
+    <listener class-name="com.qa.opencart.Listeners.ExtentReportListener"/>
+    <listener class-name="com.qa.opencart.Listeners.TestAllureListener"/>
+    <listener class-name="com.qa.opencart.Listeners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Login page Test(failed)" verbose="4">
+    <classes>
+      <class name="com.qa.opencart.Test.LoginPageTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginPageTitletest"/>
+        </methods>
+      </class> <!-- com.qa.opencart.Test.LoginPageTest -->
+    </classes>
+  </test> <!-- Login page Test(failed) -->
+</suite> <!-- Failed suite [open Cart App  Regression suite] -->
